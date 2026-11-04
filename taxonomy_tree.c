@@ -32,12 +32,17 @@ void link_parent(Taxon *child, Taxon *parent){
     child -> parent_group = parent;
 }
 
-void print_taxonomy(Taxon *species_list[], int species_count){
-    
+void print_taxonomy(Taxon *species_list, int species_count){
+    printf("=== SPECIES CLASSIFICATION HIERARCHY ===\n");
+    printf("SPECIES 1: %s \n", species_list -> parent_group -> parent_group -> name);
+    printf("- Average Lifespan: %d \n", species_list -> parent_group -> parent_group -> lifespan);
+    printf("- Belongs to Genus: %s (Lifespan: %d) \n", species_list -> parent_group ->name, species_list -> parent_group -> lifespan );
+    printf("- Belongs to Family: %s (Lifespan: %d)", );
 }
 
 int main(){
-    
+
+
 }
 
 
