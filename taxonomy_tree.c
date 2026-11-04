@@ -28,8 +28,17 @@ void read_taxon_info(const char *label, char *name_out, int *lifespan_out){
 
 }
 
+void link_parent(Taxon *child, Taxon *parent){
+    child -> parent_group = parent;
+}
 
+void print_taxonomy(Taxon *species_list[], int species_count){
+    
+}
 
+int main(){
+    
+}
 
 
 
